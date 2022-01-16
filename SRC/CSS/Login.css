@@ -1,0 +1,139 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+body {
+    min-width: 128px;
+    max-width: 620px;
+    min-height: 160px;
+    max-height: 1200px;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(60% + 0.8vmin);
+}
+
+
+main {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+main #title {
+    font-size: 48px;
+    text-decoration: underline;
+}
+
+
+main #circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 27% 73% 100% 0% / 46% 12% 88% 54% ;
+    background-image: linear-gradient(#000080, #0000FF, #191970);
+    box-shadow: 10px, 5px, 5px, black;
+    margin-top: 1rem;
+    box-shadow: 0 8px 12px 0 rgba( 211, 211, 211, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    margin-left: 3rem;
+}
+
+
+main form {
+    margin-top: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: solid 2px;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    background: rgba( 0, 0, 0, 0.4 );
+    background: rgba( 0, 0, 0, 0.8 );
+    box-shadow: 0 8px 32px 0 rgba( 211, 211, 211, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+a {
+    text-decoration: none;
+    color:  white;
+}
+
+span:hover {
+    text-decoration: dashed;
+}
+
+
+main input {
+    margin-top: 10px;
+    padding: 1rem;
+    border-radius: 8px;
+    outline: none;
+    caret-color: #000080;
+    background-color: whitesmoke;
+}
+
+main input::placeholder {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+}
+
+main #send {
+    font-family: 'Ubuntu Mono', monospace;
+    cursor: pointer;
+    background-color: #EE7600;
+    border-color: transparent;
+    color: white;
+}
+
+
+main #send:hover {
+    transform: perspective(1000px) rotateX(15deg) scale(1.1);
+}
+
+main .return {
+    background-color: black;
+    width: 100px;
+    padding: 1rem;
+    border-radius: 8px;
+    outline: solid 1.5px white;
+    position: relative;
+}
+
+main #voltar {
+    width: 80px;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #000080;
+    color: white;
+    cursor: pointer;
+    border-color: transparent;
+}
+
+main #voltar:hover {
+    transform: translateX(-40px) scale(1.1);
+    background-color: orangered;
+}

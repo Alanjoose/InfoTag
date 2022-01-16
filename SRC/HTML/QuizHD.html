@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Quizz.css">
+    <script src="../SCRIPT/Home.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+        <div id="circle"></div>
+        <h1 id="title">{<\InfoTag/>}</h1>
+        <h3>Coloque seus conhecimentos em prática com esse quiz</h3>
+        <a href="./Home.php"><button id="back">Voltar</button></a>
+        <select name="configs" id="cfg" onchange="location = this.value;">
+            <option selected disabled hidden>Configurações</option>
+            <option value="../BACKEND/CRUD/Update.php">Alterar Nome</option>
+            <option value="../BACKEND/CRUD/Delete.php">Deletar Conta</option>
+            <option value="../BACKEND/Logout.php">Sair</option>
+        </select>
+    </header>
+    <h5>Hardware</h5>
+    <div class="container">
+        <form action="../BACKEND/Count.php" method="post">
+            <section>
+                <p>
+                    <strong>QUESTÃO 01: </strong> Qual a definição de <i>Hardware interno</i>?
+                </p>
+                <span class="pgt">A) Parte do hardware que se localiza dentro do computador</span>
+                <span class="pgt">B) Seção do sistema operacional que interliga os programas<br> ao processamneto real.</span>
+                <span class="pgt">C) Parte do hardware que se localiza fora do computador.</span>
+                <span class="pgt">D) Pasta remota em servidor.</span>
+                <input type="text" name="q1" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 02:</strong> Qual a principal função do Processador?
+                </p>
+                <span class="pgt">A) Converte os dados recebidos em imagens.</span>
+                <span class="pgt">B) Aramazena os dados de forma definitiva.</span>
+                <span class="pgt">C) Realiza o trabalho de processamento de todos os dados que são<br> recebido pela máquina.</span>
+                <span class="pgt">D) Pasta remota em servidor.</span>
+                <input type="text" name="q2" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 03:</strong> Como a placa mãe interliga os componentes?
+                </p>
+                <span class="pgt">A) Via wireless.</span>
+                <span class="pgt">B) Cabos e barramentos.</span>
+                <span class="pgt">C) Por indução.</span>
+                <span class="pgt">D) Fibra optica.</span>
+                <input type="text" name="q3" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 04:</strong> Como funciona o teclado mecânico?
+                </p>
+                <span class="pgt">A) Contatos de cobre metálico.</span>
+                <span class="pgt">B) Membranas de silicone.</span>
+                <span class="pgt">C) Mecanismo optico.</span>
+                <span class="pgt">D) Interruptores acionadores de molas metálicas.</span>
+                <input type="text" name="q4" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 05:</strong> O que significa DDR?
+                </p>
+                <span class="pgt">A) Double Data Rate.</span>
+                <span class="pgt">B) Data Root.</span>
+                <span class="pgt">C) Dupla taxa de transferência.</span>
+                <span class="pgt">D) Downforce Dual Range.</span>
+                <input type="text" name="q5" placeholder="Resposta" maxlength="2" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 06:</strong> Assinale como <strong>V</strong> para verdadeiro, e <strong>F</strong> para falso<br>
+                    as seguintes afirmações:
+                </p>
+                <span class="pgt">A) A memória ram é um hardware de entrada.</span>
+                <span class="pgt">B) A fonte fornece Energia a todos os dispositivos, exceto o HD.</span>
+                <span class="pgt">C) As placas de vídeo modernas possuem um processamento à parte para melhoramento de gráficos.</span>
+                <span class="pgt">D) A memória rom é uma memória somente de leitura.</span>
+                <input type="text" name="q6" placeholder="Resposta" maxlength="4" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 07:</strong> Qual o motivo dos SSD's serem mais rápidos que os Discos Rígidos?
+                </p>
+                <span class="pgt">A) É mais leve.</span>
+                <span class="pgt">B) Pelo uso de processamento externo.</span>
+                <span class="pgt">C) Por não possuir partes móveis.</span>
+                <span class="pgt">D) Maior rotação por minuto.</span>
+                <input type="text" name="q7" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 08:</strong> Qual a função da placa de rede?
+                </p>
+                <span class="pgt">A) Gerenciar o módulo bluetooth.</span>
+                <span class="pgt">B) Controlar o sistema de audio.</span>
+                <span class="pgt">C) Enviar mensagens codificadas.</span>
+                <span class="pgt">D) Gerenciar as trocas de pacote e conexão à internet.</span>
+                <input type="text" name="q8" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 09:</strong> O que são barramentos?
+                </p>
+                <span class="pgt">A) Conjunto de cabos para ligação de hardwares externos.</span>
+                <span class="pgt">B) Conjunto de linhas de comunicação entre periféricos.</span>
+                <span class="pgt">C) Soquetes de ligação de dispositivos à rede elétrica.</span>
+                <span class="pgt">D) Proteção contra curto-circuito.</span>
+                <input type="text" name="q9" placeholder="Resposta" maxlength="1" required>
+            </section>
+
+            <!--Outra pergunta-->
+            <section>
+                <p>
+                    <strong>QUESTÃO 10:</strong> Qual a definição de GPU?
+                </p>
+                <span class="pgt">A) Central processing units.</span>
+                <span class="pgt">B) Local area network.</span>
+                <span class="pgt">C) Graphic processing units.</span>
+                <span class="pgt">D) Universal serial bus.</span>
+                <input type="text" name="q10" placeholder="Resposta" maxlength="1" required>
+            </section>
+            <input type="submit" value="Enviar Respostas" id="send">
+        </form>
+    </div>
+    <nav class="configs_infe"><button id="btop" onclick="Back_Top()">Voltar ao Topo</button></nav>
+    </main>
+</body>
+</html>

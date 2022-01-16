@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Configs.css">
+    <title>Configurações</title>
+    <script src="../SCRIPT/Configs.js"></script>
+</head>
+<body>
+    <div class="confirm" id="box">
+        <p>
+            Todos os seus dados cadastrados serão deletados da aplicação:<br>
+            <strong>Nome, Email, Senha, Sexo, Pontuação Geral.</strong><br>
+            Essa ação deletará sua conta, tem certeza de que deseja prosseguir?<br>
+        </p>
+        <a href="../BACKEND/CRUD/Delete.php"><button id="yes">Sim</button></a>
+        <button id="no" onclick="No()">Não</button>
+    </div>
+    <main id="main">
+        <header class="header">
+        <div id="circle"></div>
+        <h1 id="title">{<\InfoTag/>}</h1>
+        <h3>Deixe o seu perfil de acordo com seu gosto</h3>
+        <a href="./Home.php"><button id="back">Voltar</button></a>
+    </header>
+    <div class="container">
+        <aside class="vertical_menu">
+            <button class="options" id="one" onclick="Edit_Name()">Alterar Nome</button>
+            <button class="options" onclick="Alter_Theme()">Personalizar Tema</button>
+            <button class="options">Acessibilidade</button>
+            <button class="options">Politicas de Segurança</button>
+            <button class="options" onclick="Devs()">Desenvolvedor</button>
+            <button class="options" onclick="Confirm()">Deletar Conta</button>
+            </aside>
+        </div>
+        <main>
+            <section class="navi" id="name">
+                <h4>Alterar Nome</h4>
+                <form action="../BACKEND/CRUD/Update.php" method="post">
+                    <input type="text" name="nome" placeholder="Novo nome">
+                    <input type="submit" value="Alterar">
+                </form>
+            </section>
+            <section class="navi" id="theme">
+                <h4>Personalizar Tema</h4>
+                <label>Selecionar cor: <input type="color" id="color"></label>
+            </section>
+            <section class="navi" id="access">
+                <h4>Acessibilidade</h4>
+                <label>
+                    Tamanho da Fonte:
+                    <select>
+                        <option value="p">Pequena</option>
+                        <option value="m" selected>Padrão</option>
+                        <option value="g">Grande</option>
+                    </select>
+                </label>
+            </section>
+            <section class="navi" id="sec">
+                <h4>Política de segurança</h4>
+                <p>
+
+                </p>
+            </section>
+            <div class="confirm" id="box">
+                <p>
+                    Todos os seus dados cadastrados serão deletados da aplicação:<br>
+                    <strong>Nome, Email, Senha, Sexo, Pontuação Geral.</strong><br>
+                    Essa ação deletará sua conta, tem certeza de que deseja prosseguir?<br>
+                </p>
+                <a href="../BACKEND/CRUD/Delete.php"><button id="yes">Sim</button></a>
+                <button id="no">Não</button>
+            </div>
+    </main>
+    </main>
+</body>
+</html>

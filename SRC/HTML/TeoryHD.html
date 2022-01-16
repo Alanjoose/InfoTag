@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoria</title>
+    <link rel="stylesheet" href="../CSS/Teoria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script src="../SCRIPT/Home.js"></script>
+</head>
+<body>
+<main>
+        <header class="header">
+        <div id="circle"></div>
+        <h1 id="title">{<\InfoTag/>}</h1>
+        <a href="./Home.php"><button id="back">Voltar</button></a>
+        <select name="configs" id="cfg" onchange="location = this.value;">
+            <option selected disabled hidden>Configurações</option>
+            <option value="../BACKEND/CRUD/Update.php">Alterar Nome</option>
+            <option value="../BACKEND/CRUD/Delete.php">Deletar Conta</option>
+            <option value="../BACKEND/Logout.php">Sair</option>
+        </select>
+    </header>
+
+    <div class="container">
+        <h2>Hardware</h2>
+        <span>|Introdução|</span>
+        <p id="intro">
+            São definidas como <i><strong>Hardware</strong></i> todas as partes físicas do computador,
+            incluídas no funcionamento do dispositivo,<br> como partes móveis, memórias, circuitos, discos rígidos
+            e outras que serão vistas a seguir. O hardware se divide em duas classificações: Hardware interno, e Hardware externo.
+        </p>
+        <span><strong>Hardware Interno</strong></span>
+        <p id="h-e">
+            Como já se diz o nome, <i><strong>Hardware interno</strong></i> é a parte do hardware que se encontra dentro do <strong>gabinete</strong>.<br>
+            Segue a lista sobre cada: <br>
+        </p>
+        <div class="placamae">
+        <span><i>Placa Mãe</i></span>
+        <p>
+            A placa mãe é um circuito central que une todos os componentes interligados no computador<br>
+            garantindo o funcionamento de maneira organizada, alimentando os componentes, e gerenciando a distribuição de energia<br>
+        </p>
+        <img src="../IMG/Hardware/Placa-Mae.jpg" alt="Placa mãe fonte: Conceitos.com">
+        <h5>Na foto acima há um modelo de placa mãe. fonte: <a href="https://conceitos.com/placa-mae/" target="_blank">Conceitos.com</a></h5>
+        <p>
+            O contato realizado entre os componentes na placa permitem também a troca de informação entre os componentes<br> que necessitam desse recurso.
+            Tão importante quanto um bom processador e memórias é uma boa placa mãe, que seja eficiente. Geralmente têm suas
+            informações "Maquiadas" pelos fabricantes de computador.<br> É um aspecto a ser observado na hora de montar um novo pc.
+            Fonte : <a href="https://kazuk.com.br/blog/o-que-e-a-placa-mae/#:~:text=Ela%20%C3%A9%20o%20sistema%20que,rede%20e%20tudo%20o%20mais.">Kazuk Hardware</a>
+            ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Processador">
+        <span><i>Processador</i></span>
+        <p>
+           Comummente definido como o "cérebro do computador", o processador é o dispositivo responsável por <abbr title="Submeter a processamento de dados; organizar dados, de acordo com a sequência de instruções codificada num programa.">Processar</abbr>
+           todas<br> as informações geradas e que transitam pelo computador. Em várias fontes e literaturas é chamado por <strong><abbr title="Central Processing Unit / Unidade de Central de Processamento">CPU</abbr></strong>. Também é sua função interpretar instruções "Scripts"<br>
+           e executá-los na forma de saída visual ou procedimentos na máquina.
+        </p>
+        <img src="../IMG/Hardware/processador.jpg" alt="Processador. fonte: Google imagens">
+        <h5>Na foto acima há um modelo de processador intel i5. fonte: <a href="https://www.google.com/imghp?hl=pt-BR" target="_blank">Google imagens</a></h5>
+        <p>
+            É geralmente um dos primeiros itens que se vem à mente quando se falara de computador, isso pelo fato de estar envolvido<br>
+            com praticamente todas as funções realizadas por este. <strong>OBS:</strong> CPU não deve ser confundida como gabinete,<br> é um erro comum entre os usuários de pcs.
+            ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Curiosidade">
+        <span><i>Pit-Stop(Curiosidade)</i></span>
+        <p>
+           A definição de <strong>Computação</strong> é a obtenção de resultados a partir de uma entrada e saida
+           de parâmetros/dados, processados com base em regras estabelecidas.<br> Também sendo um termo da matemática com o mesmo significado.<br>
+           Resumindo: A geração de resultados a partir de informações brutas.
+           ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="HD">
+        <span><i>Disco Rigido(HD)</i></span>
+        <p>
+            É o dispositivo que armazena todos os dados permanentes do computador, e normalmente a utilização constante<br>
+            da máquina gera muitos dados, e o <strong>HD</strong> é o responsável por fazer o armazenamento.
+        </p>
+        <img src="../IMG/Hardware/hd.jpg" alt="Disco Rígido. fonte: Info Escola">
+        <h5>Na foto acima há um modelo de disco rígido de uma maneira possível de ver suas partes móveis. fonte: <a href="https://www.infoescola.com/informatica/disco-rigido/" target="_blank">Info Escola</a></h5>
+        <p>
+           Atualmente os discos rígidos possuem uma grande capacidade de armazenamento devido à enorme quantidade de dados geradas na era atual.<br>
+           Por possuir uma boa quantidade de peças móveis e ter funcionamento <abbr title="Sistema que integra mecânica e circuitos elétricos."> eletromecânico</abbr>, acaba-se tendo uma certa defasagem na performace
+           como por exemplo, na hora de inicializar um sistema opracional ou programa. Perdendo esse ponto para os <abbr title="Unidade em estado sólido"> SSD's</abbr>.
+           ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Ram">
+        <span><i>Memória RAM</i></span>
+        <p>
+            Citada muitas vezes no ramo da informática, a memória ram é outra das mais importantes peças para o funcionamento do computador, afinal, ele não funciona sem ela.
+            Seu nome é uma sigla inglesa que significa <i>"Memória de acesso aleatório/Random acces memory"</i>.
+            Em uma rápida análogia seria como um espaço temporário de trabalho, que após realizado é enviado para a memória de armazenamento definitivo.
+        </p>
+        <img src="../IMG/Hardware/ram.jpg" alt="Memória ram. fonte: Google imagens">
+        <h5>Na foto acima há um pente de memória ram. fonte: <a href="https://canaltech.com.br/hardware/o-que-e-memoria-ram/#:~:text=A%20mem%C3%B3ria%20RAM%20%C3%A9%20respons%C3%A1vel,os%20dados%20essenciais%20mais%20rapidamente." target="_blank">Canal Tech</a></h5>
+        <p> 
+            Essas memórias sempre são acompanhadas de um atributos nomeados pela sigla <strong>"DDR"</strong>, que significa <i>Dupla taxa de tranferência/Double data rate</i>. Que é o dobra da taxa
+            de transferência por clock. <i>Clock</i> é uma informação representada em hertz que serve como referencial de potência para o aparelho.
+            ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="VRam">
+        <span><i>Placa de Vídeo</i></span>
+        <p>
+            Se você é um internauta do mundo dos games ou assiste algum youtuber/streamer, já deve ter ouvido falar nela.
+            A placa de vídeo, ela é a responsável por todas as informações gráficas exibidas em seu monitor/tela; Desde às cores, animações, videos e objetos 3d.
+
+        </p>
+        <img src="../IMG/Hardware/placa de video.jpg" id="pv" alt="Memória ram. fonte: Adrenaline">
+        <h5>Na foto acima há uma placa de vídeo modelo Asus Poseidon. fonte: <a href="https://canaltech.com.br/hardware/o-que-e-memoria-ram/#:~:text=A%20mem%C3%B3ria%20RAM%20%C3%A9%20respons%C3%A1vel,os%20dados%20essenciais%20mais%20rapidamente." target="_blank">Adrenaline</a></h5>
+        <p> 
+            Elas podem estar incluidas nos hardwares de duas maneiras: integrada ao processador e de forma dedicada, conectada á placa mãe por um barramento e um cabo.
+            As informações são recebidas após o processamento da CPU e a partir delas geram imagens dos respectivos resultados.
+            Atualmente as placas de vídeo modernas possuem um processamento à parte que usa de inteligência artificial para cálculo e melhoria das luzes e reflexos, principalmente voltada
+            para jogos.
+            ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Curiosidade">
+        <span><i>Pit-Stop(Curiosidade)</i></span>
+        <p>
+          No ano de 1970 foi lançado o primeiro computador com uma tela embutida, essa era a primeira vez que um computador exibiria
+          os resultados das tarefas aos usuários em tempo real. Formado po0r apenas uma cor ele podia imprimir 20 linhas e 72 duas colunas de caracteres.
+          O nome do computador era ,<strong>VT05</strong>, da DEC.<br>
+          <img src="../IMG/Hardware/dec_vt05.jpg" alt="VT05">
+        </p>
+        </div>
+    </div>
+    <span><strong>Hardware Externo</strong></span>
+    <div class="Monitor">
+        <span><i>Monitor</i></span>
+        <p>
+           Chamado em alguns lugares de "Ecrã", o monitor é um dispositivo de saída onde são exibidos os resultados das operações realizadas pelo processador.
+           A maneira de como ele é interligado ao computador foi mudando com o passar do tempo, conforme a evolução dos cabos eletrônicos.
+        </p>
+        <img src="../IMG/Hardware/monitor.jpg" alt="Monitor. fonte: Google imagens">
+        <h5>Na foto acima há um modelo de monitor comummente usado em pc's domésticos. fonte: <a href="https://www.google.com/imghp?hl=pt-BR" target="_blank">Google imagens</a></h5>
+        <p>
+           Alguns atributos que diferenciam um monitor para outro são as dimensões normalmente dadas em polegadas, resolução dada em pixels, e a taxa de atualização dada em hertz.
+           Essa última é a definição de quantas vezes o conteúdo exibido na tela se altera por segundo, quanto maior a taxa de atualização, mais raṕida a resposta do monitor.
+           ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Teclado">
+        <span><i>Teclado</i></span>
+        <p>
+            Um dos principais dispositivos de entrada e interação do usuário com o computador é sem dúvidas o teclado. É com ele que se envia os dados caracteres seja como um texto para ser lido, ou
+            escrever um código para um programa. Basicamente falando: Um dispositivo com um formato adequado, com teclas indicadas por seus respectivos simbolos, que ao serem pressionadas empurram pequenas borrachas,
+            *geralmente de silicone*
+            que se contraem fazendo contato com uma membrana que contém circuitos eletrônicos que levam a um microprocessador e um cabo de conexão. Esse no caso dos teclados mais comuns disponíveis à venda no mercado.
+            Já que existem também os teclados mecânicos que possuem interruptores abaixo das teclas com molas de metal que fecham o circuito.
+
+        </p>
+        <img src="../IMG/Hardware/teclado.jpg" alt="Teclado. fonte: Google imagens">
+        <h5>Na foto acima há um modelo de teclado que funciona por membranas. fonte: <a href="https://blog.mundomax.com.br/informatica/afinal-como-funciona-um-bendito-teclado-de-computador/#:~:text=Quando%20voc%C3%AA%20digita%2C%20o%20processador,controlador%20de%20teclado%20do%20computador." target="_blank">Blog Max</a></h5>
+        <p> 
+           Se parar para analisar o seu teclado agora, muito provavelmente será do modelo QWERTY, as primeiras letras que o compôem. Esse foi um modelo criado nas máquinas de escrever no ano de 1868, patenteado po Christopher Sholes.
+           As letras foram dispostas dessa maneira para tornar a digitação mais lenta, pois como as máquinas possuiam funcionamento totalmente mecânico, o mecanismo seria travado se fosse digitado rapidamente.
+           ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <div class="Curiosidade">
+        <span><i>Pit-Stop(Curiosidade)</i></span>
+        <p>
+          No ano de 2014 um jovem brasileiro entrou para o Guinness book como o mais rápido digitador de teclado em tela sensível do mundo,
+          o recordista alcançou uma taxa de 160 caracteres em 18 segundos.
+        </p>
+        </div>
+        <div class="Mouse">
+        <span><i>Mouse</i></span>
+        <p>
+            O pricipal dispositivo a ser usado para interação com o computador é o mouse. O dispositivo controla um cursor no ambiente <abbr title="parte da interface gráfica de sistemas operacionais que exibe, no vídeo, representações de objetos usualmente presentes nas mesas de trabalho.">Desktop</abbr>
+            que aponta e seleciona as tarefas a serem realizadas, atalhos, textos e todas outras funções. Uma suas versões mais comuns hoje em dia é o mouse óptico
+            que em substituição aos antigos mouses de esfera, utilizam um mecanismo óptico como sensor dos movimentos. Esse possui uma vantagem por não possuir partes móveis, mitigando quase que totalmente as falhas
+            mecânicas.
+
+        </p>
+        <img src="../IMG/Hardware/436527z.jpg" alt="Mouse. fonte: Google imagens">
+        <h5>Na foto acima há um mouse óptico. fonte: <a href="https://www.infowester.com/mouse.php#:~:text=Para%20funcionar%2C%20geralmente%20o%20mouse,consumo%20de%20energia%20%C3%A9%20baixo." target="_blank">Info Wester</a></h5>
+        <p> 
+           Além da Captação do movimento e posição, também possui botões para interação com o item selecionado.
+           ________________________________________________________________________________________________________
+        </p>
+        </div>
+        <nav class="configs_infe"><button id="btop" onclick="Back_Top()">Voltar ao Topo</button></nav>
+        <nav class="configs_infe"><a href="./QuizHD.html"><button id="btop">Ir para o teste</button></a></nav>
+</main>
+</body>
+</html>

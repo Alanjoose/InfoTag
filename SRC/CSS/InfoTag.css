@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-width: 128px;
+    max-width: 620px;
+    min-height: 160px;
+    max-height: 1200px;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(60% + 0.8vmin);
+}
+
+main {
+    min-width: 128px;
+    max-width: 620px;
+    min-height: 160px;
+    max-height: 1200px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+main h2 {
+    margin-top: 0.5rem;
+}
+
+main #circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 27% 73% 100% 0% / 46% 12% 88% 54% ;
+    background-image: linear-gradient(#000080, #0000FF, #191970);
+    box-shadow: 10px, 5px, 5px, black;
+    margin-top: 1rem;
+    box-shadow: 0 8px 12px 0 rgba( 211, 211, 211, 0.37 );
+    backdrop-filter: blur( 9.5px );
+    -webkit-backdrop-filter: blur( 9.5px );
+    margin-left: 5rem;
+}
+@media screen and (min-width: 601px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 80px;
+    }
+}
+
+main #title {
+    font-size: 3rem;
+}
+
+main .btns {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+main button {
+    width: 300px;
+    padding: 1.5rem;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #0000CD, #483D8B);
+    color: white;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 18px;
+    border-color: transparent;
+}
+
+main button:hover {
+    background-image: linear-gradient(45deg, #0000ff, #0d034d);
+}

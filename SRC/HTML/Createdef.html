@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
+    <link rel="stylesheet" href="../CSS/Create.css">
+    <link rel="icon" type="imagen/png" href="../IMG/Itag.png">
+</head>
+<body>
+    <main>
+        <div class="return">
+            <a href="index.html"><button id="voltar">Voltar</button></a>
+        </div>
+        <div id="circle"></div>
+        <h1 id="title">Criar Conta</h1>
+        <form action="../BACKEND/CRUD/Create.php" method="post">
+            <input type="text" name="nome" placeholder="Nome" required minlength="4">
+            <input type="password" name="senha" placeholder="Senha" required minlength="4" maxlength="8">
+            <abbr title="Opcional"><input type="email" name="emailrec" placeholder="E-mail de Recuperação"></abbr> <!--Criação definitiva de conta com os dados faltantes-->
+            <div class="options">
+                <label>Masculino:<input type="radio" name="sx" value="M"></label>
+                <label>Feminino:<input type="radio" name="sx" value="F"></label>
+                <label>Outro:<input type="radio" name="sx" value="O"></label>
+            </div>
+            <input type="submit" value="Enviar" id="send">
+        </form>
+    </main>
+</body>
+</html>
