@@ -5,3 +5,5 @@
  <p>O projeto visa guiar e instruir quem deseja aprender mais ou ingressar na área da computação, clareando um caminho para dar seus primeiros passos.
  Contamos com a participação dos usuários para melhoria da aplicação, pois o aprendizado constante faz parte do caminho. Está sujeito a melhorias e sugestões
  para mais implementações.</p>
+
+[![texto alternativo](http://i.imgur.com/tXSoThF.png)](http://www.twitter.com/meunome "texto título")
