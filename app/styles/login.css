@@ -1,0 +1,101 @@
+.login,
+.criar
+{
+    margin-top: 2rem;
+    padding-top: 1rem;
+}
+
+.login,
+form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+form
+input
+{
+    margin: 10px;
+    padding: .8rem;
+    border-radius: 4px;
+    outline: groove .8px #FFF;
+    background: transparent;
+    color: #FFF;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form
+input::placeholder
+{
+    color: #FFF;
+}
+
+#entrar
+{
+    cursor: pointer;
+    transition: background-color 1s, color 1s, outline 1s;
+}
+
+#entrar:hover
+{
+    background-color: #FFF;
+    color: #161B22;
+    outline: none;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.small
+{
+    color: #FFF;
+    text-decoration: none;
+    padding: .5rem;
+    outline: groove 1px #FFF;
+    border-radius: 4px;
+}
+
+.fa-circle-question,
+.fa-file
+{
+    font-size: 2em;
+}
+
+#conectado,
+#leu
+{
+    outline: none;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+#form
+{
+    display: block;
+}
+
+#criar
+{
+    width: 90%;
+    cursor: pointer;
+}
