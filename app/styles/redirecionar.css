@@ -1,0 +1,38 @@
+.box
+{
+    align-items: center;
+}
+
+.container
+{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+
+.small
+{
+    text-decoration: none;
+    color: #FF0000;
+    outline: groove 2px #FF0000;
+    border-radius: 4px;
+    padding: 1rem;
+    transition: background-color 1s, color 1s;
+}
+
+.small:hover
+{
+    background-color: rgba(255, 0, 0, .5);
+    color: #FFF;
+}
+
+.menu
+{
+    padding: 1rem;
+}
+
+.box
+{
+    outline: groove 2px #FFF;
+    padding: 1rem;
+    border-radius: 4px;
+}

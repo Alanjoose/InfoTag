@@ -6,28 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InfoTag - Descomplicando a informática</title>
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/redirecionar.css">
     <link rel="stylesheet"
     href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
     integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5"
     crossorigin="anonymous"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="./styles/animations.css">
 </head>
 <body>
+
     <div class="container">
-
-        <div class="logo">
-            <i class="fa fa-solid fa-circle-notch"></i>
-            <h1 style="font-size: 2.2em;">{\InfoTag/}</h1>
-            <h2>Descomplicando a informática</h2>
+        <i class="fa fa-solid fa-circle-notch"></i>
+        <div class="box">
+            <h2>Cheque seu email</h2>
+            <p>
+                Enviamos um email para você, confira a sua caixa de entrada.
+            </p>
+            <span>Caso não encontre, cheque os spans.</span>
         </div>
-
         <div class="menu">
-            <a href="login.html" class="link"><b>Entrar</b></a>
-            <a href="criarconta.html" class="link"><b>Criar uma conta</b></a>
+            <a href="#" class="small" id="fechar">
+                <b>Você pode fechar essa página</b>
+            </a>
         </div>
     </div>
     <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
-    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/interfaces.js"></script>
 </body>
 </html>
