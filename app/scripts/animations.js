@@ -3,7 +3,7 @@ $(document).ready(function () {
 
     $("a.link").click(function(){
         $(".fa-circle-notch").css(
-            "animation", "spinLogo 1s normal"
+            "animation", "spinLogo 1s infinite"
         );
     });
 

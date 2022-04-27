@@ -70,6 +70,8 @@ main
 {
     width: 100%;
     background: #010409;
+    z-index: -1;
+    border-radius: 8px;
 }
 
 .wrapper
@@ -113,14 +115,14 @@ main
 .teory
 {
     color: #FFFF00;
-    outline: groove 1px #FFFF00;
+    outline: groove 2px #FFFF00;
     transition: background 1s, color 1s;
 }
 
 .test
 {
     color: #00FF00;
-    outline: groove 1px #00FF00;
+    outline: groove 2px #00FF00;
     transition: background 1s, color 1s;
 }
 
@@ -162,8 +164,22 @@ footer
 }
 
 footer
+.active
+{
+    transition: background-color .2s ease-in, color .2s ease-in;
+}
+
+
+footer
 .footer-icon:active
 {
     background-color: #FFF;
     color: #010409;
+}
+
+footer
+.active:active
+{
+    background-color: #010409;
+    color: #FFF;
 }

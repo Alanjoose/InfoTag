@@ -28,16 +28,16 @@
                 <h2>Criar conta</h2>
                 <a href="index.html" class="small"><b>Voltar</b></a>
             </nav>
-            <form action="" method="post" id="form">
+            <form action="../database/crud/create.php" method="post" id="form">
                <div class="box left">
-                   <input type="text" name="nome" id="nome" placeholder="Nome">
-                   <input type="password" name="senha" id="senha" placeholder="Senha">
+                   <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                   <input type="password" name="senha" id="senha" placeholder="Senha" required>
                </div><!--
 
                -->
                <div class="box right">
-                   <input type="email" name="email" id="email" placeholder="Email">
-                   <input type="number" name="idade" id="idade" placeholder="Idade" min="12" max="99">
+                   <input type="email" name="email" id="email" placeholder="Email" required>
+                   <input type="number" name="idade" id="idade" placeholder="Idade" min="12" max="99" required>
                </div>
                <label for="leu">Li e concordo com os termos de uso:</label>
                <input type="checkbox" name="leu" id="leu">
@@ -46,5 +46,7 @@
         </div>
 
     </div>
+    <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/animations.js"></script>
 </body>
 </html>

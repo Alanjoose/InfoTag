@@ -1,3 +1,9 @@
+<?php
+session_start();
+include '../database/session.php';
+include '../database/process/dates.php';
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -19,27 +25,27 @@
     <div class="container">
     <header>
         <div class="grid-line">
-            <span>Hora</span>
-            <span>Pontos</span>
-            <i class="fa fa-solid fa-moon"></i>
+            <span id="hour"><?=$date?></span>
+            <span><?=$_SESSION['pontos']?></span>
+            <i class="fa fa-solid fa-moon" id="dark"></i>
         </div>
-        <h2>Boa noite Alan</h2>
+        <h2><?=getPresentation() . $_SESSION['nome']?></h2>
     </header>
     <nav class="nav-menu">
         <div class="menu-content">
             <ul>
-                <li><a href="#"><b>Conta</b></a></li>
-                <li><a href="#"><b>Aparência</b></a></li>
-                <li><a href="#"><b>Estatisticas</b></a></li>
-                <li><a href="#"><b>Mensagens+</b></a></li>
-                <li><a href="#"><b>Configurações</b></a></li>
-                <li><a href="#"><b>Sair</b></a></li>
+                <li><a href="#" class="menu-link"><b>Conta</b></a></li>
+                <li><a href="#" class="menu-link"><b>Aparência</b></a></li>
+                <li><a href="#" class="menu-link"><b>Estatisticas</b></a></li>
+                <li><a href="#" class="menu-link"><b>Mensagens+</b></a></li>
+                <li><a href="#" class="menu-link"><b>Configurações</b></a></li>
+                <li><a href="../database/crud/logout.php" class="menu-link"><b>Sair</b></a></li>
             </ul>
         </div>
     <i class="fa fa-solid fa-bars" id="bars"></i>
     </nav>
 
-    <main>
+    <main id="top">
         <nav class="fluid-line">
         <h3>Tópicos</h3>
         </nav>
@@ -83,7 +89,7 @@
 
             <div class="card">
             <i class="fa fa-brands fa-windows card-icon"></i>
-            <b>Algorítmos</b>
+            <b>Windows</b>
             <a href="#" class="card-link teory"><b>Teoria</b></a>
             <a href="#" class="card-link test"><b>Teste</b></a>
             </div>
@@ -102,11 +108,19 @@
             <a href="#" class="card-link test"><b>Teste</b></a>
             </div>
         </div>
+
+        <nav class="fluid-line">
+        <h3>Tutoriais</h3>
+        </nav>
+
+        <div class="wrapper-fluid">
+
+        </div>
         
     </main>
 
     <footer>
-    <i class="fa fa-solid fa-house footer-icon"></i>
+    <i class="fa fa-solid fa-house footer-icon" id="home"></i>
     <i class="fa fa-solid fa-user footer-icon"></i>
     <i class="fa fa-solid fa-medal footer-icon"></i>
     </footer>

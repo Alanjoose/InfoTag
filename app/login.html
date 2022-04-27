@@ -28,9 +28,9 @@
                 <h2>Entrar</h2>
                 <a href="index.html" class="small"><b>Voltar</b></a>
             </nav>
-            <form action="" method="post">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <input type="password" name="senha" id="senha" placeholder="Senha">
+            <form action="../database/crud/auth.php" method="post">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
                <div class="linha">
                    <label for="conectado">Mantenha-me conectado:</label>
                 <input type="checkbox" name="conectado" id="conectado">
@@ -38,7 +38,8 @@
                 <input type="submit" value="Entrar" id="entrar">
             </form>
         </div>
-
     </div>
+    <script type="text/javascript" src="./scripts/jquery-3.6.0.min.js"></script>
+    <script src="./scripts/animations.js"></script>
 </body>
 </html>
