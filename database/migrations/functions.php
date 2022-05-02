@@ -21,7 +21,7 @@ if($date < 12)
 {
     $presentation = "Bom dia ";
 }
-else if($date > 12 || $date < 18)
+else if($date > 12 && $date < 18)
 {
     $presentation = "Boa tarde ";
 }

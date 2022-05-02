@@ -73,5 +73,7 @@ h1
 .menu
 .link:hover
 {
-    box-shadow: 5px 5px 5px #FFF;
+    background: #FFF;
+    color: #161B22;
+    transition: ease-in-out background .5s, ease-in color .5s;
 }
